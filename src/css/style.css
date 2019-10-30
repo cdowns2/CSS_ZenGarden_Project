@@ -19,6 +19,12 @@
           flex-direction: column;
 }
 
+.digital-selection {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
 .intro {
   width: 100%;
   -webkit-box-ordinal-group: 3;
@@ -28,8 +34,8 @@
 }
 
 footer {
-  -webkit-box-ordinal-group: 2;
-      -ms-flex-order: 1;
-          order: 1;
+  -webkit-box-ordinal-group: 5;
+      -ms-flex-order: 4;
+          order: 4;
 }
 /*# sourceMappingURL=style.css.map */

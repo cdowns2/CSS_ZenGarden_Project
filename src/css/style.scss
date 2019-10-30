@@ -13,11 +13,14 @@
       flex-direction:column;
     
     }
+.digital-selection{
+order:1;
+}
   .intro{
       width: 100%;
       order:2;
       background-color: lightcyan;
   }
 footer{
-    order:1;
+    order:4;
 }
