@@ -1,0 +1,38 @@
+* {
+    margin: auto;
+    margin-top: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    list-style: none;
+  }
+.page-wrapper{
+    display: flex;
+    flex-direction: column;
+    background-color: lightgrey;
+}
+/* This is the navigation code */
+.sidebar{
+    color: white;
+    margin-left: 20px;
+    order:1;
+    background-color: lightgrey;
+    width: 100%;
+    padding-top: 130px;
+    position: absolute;
+    background-color: transparent;
+}
+
+ header{
+     font-size: 30px;
+    color:rgb(133, 255, 122);
+    width: 100%;
+    background-image:url(../assest/images/DSC07302.jpg);
+    height: 600px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.intro{
+    padding:20px;
+}

@@ -1,1 +1,49 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+* {
+  margin: auto;
+  margin-top: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  list-style: none;
+}
+
+.page-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: lightgrey;
+}
+
+/* This is the navigation code */
+.sidebar {
+  color: white;
+  margin-left: 20px;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  background-color: lightgrey;
+  width: 100%;
+  padding-top: 130px;
+  position: absolute;
+  background-color: transparent;
+}
+
+header {
+  font-size: 30px;
+  color: #85ff7a;
+  width: 100%;
+  background-image: url(../assest/images/DSC07302.jpg);
+  height: 600px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.intro {
+  padding: 20px;
+}
+/*# sourceMappingURL=style.css.map */
