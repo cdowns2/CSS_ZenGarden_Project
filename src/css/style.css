@@ -1,49 +1,546 @@
-* {
+/*colors*/
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Dancing+Script&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Dancing+Script&display=swap");
+main > h1 {
+  color: #eea571;
+  /* title goes into the header on big devices */
+  color: #F6D0B5;
+}
+
+body {
+  /* this is the page background */
+  background-color: #ffffff;
+}
+
+a {
+  color: #e6e6e6;
+  text-decoration: none;
+}
+
+/* -------------------------------- 
+
+xTypeograpy 
+
+-------------------------------- */
+/* -------------------------------- 
+xTypeograpy 
+-------------------------------- */
+h1,
+h2 {
+  font-family: "Montserrat", sans-serif;
+  color: #F6D0B5;
+}
+
+h1 {
+  font-size: 2.4rem;
+  font-weight: 300;
+  line-height: 1.2;
+  margin: 0 0 0.4em;
+  text-transform: uppercase;
+}
+@media only screen and (min-width: 768px) {
+  h1 {
+    font-size: 3.2rem;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  h1 {
+    font-size: 4rem;
+  }
+}
+
+h2 {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 1em 0;
+}
+@media only screen and (min-width: 768px) {
+  h2 {
+    font-size: 1.8rem;
+    margin: 1em 0 1.4em;
+  }
+}
+
+section > h2::before {
+  /* number before each section title */
+  color: silver;
+}
+
+p {
+  font-size: 1.4rem;
+  line-height: 1.4;
+  color: #608073;
+}
+p a {
+  color: #87A599;
+  text-decoration: underline;
+}
+@media only screen and (min-width: 768px) {
+  p {
+    font-size: 1.6rem;
+    line-height: 1.6;
+  }
+}
+
+main > h1 {
+  color: #eea571;
+  /* title goes into the header on big devices */
+  color: #F6D0B5;
+}
+
+body {
+  /* this is the page background */
+  background-color: #ffffff;
+}
+
+a {
+  color: #e6e6e6;
+  text-decoration: none;
+}
+
+/* -------------------------------- 
+
+xTypeograpy 
+
+-------------------------------- */
+/* -------------------------------- 
+xTypeograpy 
+-------------------------------- */
+h1,
+h2 {
+  font-family: "Montserrat", sans-serif;
+  color: #F6D0B5;
+}
+
+h1 {
+  font-size: 2.4rem;
+  font-weight: 300;
+  line-height: 1.2;
+  margin: 0 0 0.4em;
+  text-transform: uppercase;
+}
+@media only screen and (min-width: 768px) {
+  h1 {
+    font-size: 3.2rem;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  h1 {
+    font-size: 4rem;
+  }
+}
+
+h2 {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 1em 0;
+}
+@media only screen and (min-width: 768px) {
+  h2 {
+    font-size: 1.8rem;
+    margin: 1em 0 1.4em;
+  }
+}
+
+section > h2::before {
+  /* number before each section title */
+  color: silver;
+}
+
+p {
+  font-size: 1.4rem;
+  line-height: 1.4;
+  color: #608073;
+}
+p a {
+  color: #87A599;
+  text-decoration: underline;
+}
+@media only screen and (min-width: 768px) {
+  p {
+    font-size: 1.6rem;
+    line-height: 1.6;
+  }
+}
+
+.design-selection {
+  background-color: #fcede2;
+  padding-top: 20px;
+}
+.design-selection h3 {
+  color: #f0b388;
+  font-size: 50px;
+}
+
+.design-selection nav {
+  display: flex;
+  flex-flow: row wrap;
+  text-align: center;
+  width: 100%;
+  background-size: cover;
+  justify-content: space-evenly;
+  align-content: middle;
+}
+.design-selection nav ul {
+  width: 70%;
+  height: auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+.design-selection nav li {
+  background-color: #87A599;
+  align-items: center;
+  justify-content: center;
+  font-family: "Dancing Script", cursive;
+  border-radius: 100%;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  flex-flow: column;
+  color: #ffffff;
+  margin: 20px;
+  font-size: 20px;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+.design-selection nav li a {
+  font-family: "Montserrat", sans-serif;
+}
+.design-selection nav li:hover {
+  background-color: #a4bbb2;
+}
+.design-selection nav li a :nth-child(1) {
+  padding-bottom: 17px;
+  text-decoration: none;
+  color: #e6e6e6;
+}
+.design-selection nav li a :nth-child(1):hover {
+  color: #ffffff;
+}
+.design-selection nav li a :nth-child(1):active {
+  color: #e6e6e6;
+}
+.design-selection nav li a :nth-child(1):visited {
+  color: #F6D0B5;
+}
+.design-selection nav li a :nth-child(2) {
+  padding-top: 7px;
+  text-decoration: none;
+  color: #e6e6e6;
+}
+.design-selection nav li a :nth-child(2):hover {
+  color: #ffffff;
+}
+.design-selection nav li a :nth-child(2):active {
+  color: #e6e6e6;
+}
+.design-selection nav li a :nth-child(2):visited {
+  color: #F6D0B5;
+  text-decoration: none;
+}
+
+.design-archives {
+  margin-top: 50px;
+}
+
+.design-archives nav {
   margin: auto;
-  margin-top: auto;
-  margin-right: auto;
-  margin-bottom: auto;
-  margin-left: auto;
+  text-align: center;
+  width: 50%;
+  margin-bottom: 50px;
+  /*height: 50px;
+  background-color:$color-4;
+  padding: 15px;
+  font-family: $secondary-font;
+  text-align: center;
+  font-size: 20px;*/
+}
+.design-archives nav li {
+  display: inline-block;
+  width: 50%;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+.design-archives nav li a {
+  color: #87A599;
+  text-align: center;
+  text-transform: uppercase;
+  margin: auto;
+}
+.design-archives nav li:hover {
+  background-color: #F6D0B5;
+}
+.design-archives nav li:hover a:hover {
+  color: #e6e6e6;
+}
+
+.zen-resources ul {
+  background-color: #e6e6e6;
+  text-align: center;
+  width: 100%;
+}
+.zen-resources ul li {
+  display: inline-block;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+.zen-resources ul li a {
+  color: #87A599;
+}
+.zen-resources ul li:hover {
+  background-color: #F6D0B5;
+}
+.zen-resources ul li:hover a:hover {
+  color: #e6e6e6;
+}
+.zen-resources ul ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
   list-style: none;
 }
 
-.page-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+h3 {
+  font-family: "Dancing Script", cursive;
+  color: #F6D0B5;
+  text-align: center;
+  font-size: 45px;
+}
+
+body {
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  background-color: lightgrey;
+  margin-bottom: 50px;
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+}
+
+.summary p:nth-child(1) {
+  background-color: #F6D0B5;
+  font-size: 20px;
+  font-family: "Dancing Script", cursive;
+  padding-top: 20px;
+  text-align: center;
+  width: 100%;
+  height: 50px;
+  opacity: 0.7;
+  margin-top: -50px;
+}
+
+.summary p:nth-child(2) {
+  background-color: #87A599;
+  text-transform: uppercase;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: flex-end;
+  margin: auto;
+  width: 100%;
+  padding: 10px 100px 10px 0px;
+  vertical-align: middle;
+  color: #ffffff;
+}
+.summary p:nth-child(2) a {
+  display: flex;
+  flex-flow: row wrap;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+  margin-left: 20px;
+  color: #ffffff;
+  background-color: #F6D0B5;
+  text-decoration: none;
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+  vertical-align: middle;
+}
+.summary p:nth-child(2) a:hover {
+  background-color: #fcede2;
+}
+
+.intro div {
+  color: #F6D0B5;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+/*   margin: auto;
+   margin-top: auto;
+   margin-right: auto;
+   margin-bottom: auto;
+   margin-left: auto;
+   list-style: none;
+ }*/
+.page-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  background-color: #ffffff;
+  justify-content: center;
+}
+
+.main div {
+  width: 45%;
+  border: 5px solid #e6e6e6;
+  margin: auto;
+  padding: 50px;
 }
 
 /* This is the navigation code */
-.sidebar {
-  color: white;
-  margin-left: 20px;
-  -webkit-box-ordinal-group: 2;
-      -ms-flex-order: 1;
-          order: 1;
-  background-color: lightgrey;
-  width: 100%;
-  padding-top: 130px;
-  position: absolute;
-  background-color: transparent;
-}
-
 header {
   font-size: 30px;
-  color: #85ff7a;
-  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto auto;
+  color: #F6D0B5;
+  background-color: #F6D0B5;
+  opacity: 0.2;
   background-image: url(../assest/images/DSC07302.jpg);
   height: 600px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-
-.intro {
-  padding: 20px;
+header h1 {
+  background-color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  grid-column-start: 2;
+  opacity: 0.8;
+  color: #554e48;
+  grid-row-start: 2;
+  justify-self: center;
+  align-self: end;
+  text-align: center;
+  width: 50%;
+  padding: 7px 7px 7px 0px;
 }
+header h2 {
+  text-align: center;
+  font-family: "Dancing Script", cursive;
+  text-transform: unset;
+  color: #994b13;
+  background-color: #ffffff;
+  opacity: 0.8;
+  width: 50%;
+  grid-column-start: 2;
+  padding: 7px 0px 7px 7px;
+  grid-row-start: 3;
+  justify-self: center;
+  align-self: start;
+}
+
+.preamble {
+  display: block;
+  width: 80%;
+  margin: auto;
+  padding: 25px;
+  border: 5px solid #e6e6e6;
+  margin-top: 20px;
+}
+.preamble h3 {
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.main {
+  display: flex;
+  flex-flow: row wrap;
+  width: 80%;
+  padding: 25px;
+  margin: auto;
+}
+
+.main div {
+  padding: 25px;
+}
+.main div h3 {
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+footer {
+  background-color: #87A599;
+  width: 100%;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  height: 60px;
+  line-height: 60px;
+  margin-top: 25px;
+  text-align: center;
+  vertical-align: middle;
+  position: fixed;
+  z-index: -1;
+  font-family: "Montserrat", sans-serif;
+}
+
 /*# sourceMappingURL=style.css.map */
