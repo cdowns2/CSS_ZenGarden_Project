@@ -1,0 +1,169 @@
+@import 'colors';
+@import 'typography';
+
+.design-selection{
+  background-color: lighten($color-2, 10%);
+  padding-top: 20px; 
+h3{
+  color: darken($color-2, 10%);
+  font-size: 50px; 
+}
+}
+.design-selection nav{
+  //background-color: lighten($color-2, 10%);
+  display: flex; 
+  flex-flow: row wrap;
+
+ // border: 3px solid $color-1;
+  text-align: center;
+  width: 100%; 
+    
+  //background-image: url(https://www.bing.com/th?id=OIP.jLVU0CxWfkqw7R1-0z02vQHaE7&pid=Api&rs=1);
+  background-size: cover;
+ justify-content: space-evenly;
+ align-content: middle;
+ ul{
+   width: 70%;
+   height: auto; 
+   display: flex;
+   flex-flow: row wrap;
+   justify-content: space-evenly;
+ }
+  li{
+    background-color: $color-1;
+    align-items: center;
+    justify-content: center;
+    font-family: $primary-font;
+    border-radius: 100%;
+   width: 150px;
+   height: 150px; 
+    display:flex;
+    flex-flow: column;
+    color: $color-5;
+   // height: 100px; 
+    //width: 100px; 
+    margin: 20px; 
+  //font-family: $secondary-font;
+  font-size: 20px; 
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  a{
+    font-family: $secondary-font;
+    
+  }
+  &:hover{
+    background-color:  lighten($color-1, 10%);
+    ;
+  }
+  a :nth-child(1){
+    padding-bottom: 17px;
+    text-decoration: none;
+    color: $color-4;
+  &:hover{
+    color: $color-5;;
+  }
+  &:active{
+    color: $color-4;
+  }
+  &:visited{
+    color: $color-2;
+  }
+}
+  a :nth-child(2){
+    padding-top: 7px;
+    text-decoration: none;
+    color: $color-4;
+  &:hover{
+    color: $color-5;;
+  }
+  &:active{
+    color: $color-4;
+  }
+  &:visited{
+    color: $color-2;
+    text-decoration: none;
+
+  }
+}
+}
+}
+.design-archives{
+margin-top: 50px; 
+}
+.design-archives nav{
+  //background-color:$color-4;
+   margin: auto;
+  text-align: center;
+  width: 50%; 
+  margin-bottom: 50px; 
+ 
+
+/*height: 50px;
+background-color:$color-4;
+padding: 15px;
+font-family: $secondary-font;
+text-align: center;
+font-size: 20px;*/
+ li{
+display:inline-block;
+width: 50%;
+text-align: center;
+font-family: $secondary-font;
+font-size: 20px; 
+padding-top: 10px;
+padding-left: 10px;
+padding-right: 10px;
+padding-bottom: 10px;
+a{
+  color: $color-1;
+  text-align: center;
+  text-transform: uppercase;
+  margin: auto;
+}
+&:hover{
+  background-color:  $color-2;
+  ;
+a{
+ 
+&:hover{
+  color:$color-4;
+}
+}
+}
+ }
+
+}
+
+.zen-resources ul{
+  background-color:$color-4;
+  text-align: center;
+  width: 100%; 
+  li{
+    display:inline-block;
+    
+    font-family: $secondary-font;
+    font-size: 20px; 
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    a{
+      color: $color-1;
+    }
+    &:hover{
+      background-color:  $color-2;
+      ;
+    a{
+    &:hover{
+      color:$color-4;
+    }
+    }
+    }
+     }
+    ul{
+    display: grid;
+    grid-template-columns:   1fr 1fr;
+    }
+    }

@@ -1,38 +1,215 @@
-* {
+/*colors*/
+@import 'partials/colors';
+@import 'partials/typography';
+@import 'partials/basic-style';
+@import 'partials/layout';
+@import 'partials/navigation';
+@import 'partials/reset';
+@import 'partials/prefix-mixins';
+
+$primary-font: 'Dancing Script', cursive;
+$secondary-font:  'Montserrat', sans-serif;
+ 
+h3{
+    font-family: $primary-font;
+    color: $color-2;
+    text-align: center;
+    font-size: 45px; 
+}
+body{
+    display: flex;
+    margin-bottom: 50px; 
+}
+p{
+    font-family: $secondary-font;
+}
+.summary p:nth-child(1){
+background-color: $color-2;
+font-size: 20px; 
+font-family: $primary-font;
+padding-top: 20px; 
+text-align: center;
+width: 100%;
+height: 50px; 
+opacity: 0.7;
+margin-top: -50px; 
+}
+
+.summary p:nth-child(2){
+    background-color: $color-1;
+    text-transform: uppercase;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: flex-end;
     margin: auto;
+    width: 100%;
+    padding: 10px 100px 10px 0px;
+    //height: 100px; 
+    vertical-align: middle;
+    color: $color-5;
+    
+    a{
+        display: flex;
+        flex-flow: row wrap;
+        text-align: center;
+        align-items: center;
+    justify-content: center;
+    margin-right: 20px; 
+    margin-left: 20px; 
+        color: $color-5;
+        background-color: $color-2;
+        text-decoration: none;
+        border-radius: 100%;
+        width: 50px;
+        height: 50px; 
+        padding: 10px; 
+        vertical-align: middle;
+        &:hover{
+            background-color: lighten($color-2, 10%);
+        }
+    }
+}
+
+.intro div{
+color: $color-2;
+
+display: flex;
+flex-flow: row wrap;
+//width: 50%;
+}
+
+//* {
+ /*   margin: auto;
     margin-top: auto;
     margin-right: auto;
     margin-bottom: auto;
     margin-left: auto;
     list-style: none;
-  }
+  }*/
 .page-wrapper{
     display: flex;
-    flex-direction: column;
-    background-color: lightgrey;
+    flex-flow: row wrap;
+    background-color:$color-5;
+    justify-content: center;
+
+}
+.main div{
+    width: 45%;
+    border: 5px solid $color-4;
+    margin: auto;
+    padding: 50px; 
+    
+
+
 }
 /* This is the navigation code */
-.sidebar{
-    color: white;
-    margin-left: 20px;
-    order:1;
-    background-color: lightgrey;
-    width: 100%;
-    padding-top: 130px;
-    position: absolute;
-    background-color: transparent;
-}
+//.sidebar{
+ //   color: $color-1;
+  //  margin-left: 20px;
+  //  order:1;
+  //  background-color: $color-4;
+  //  width: 100%;
+ //   padding-top: 130px;
+  //  position: absolute;
+  //  background-color: transparent;
+//}
 
  header{
      font-size: 30px;
-    color:rgb(133, 255, 122);
-    width: 100%;
-    background-image:url(../assest/images/DSC07302.jpg);
+     display: grid;
+     grid-template-columns: auto auto auto;
+     grid-template-rows: auto auto auto auto;
+    color: $color-2;
+    background-color: $color-2;
+opacity: .2;
+    background-image:url(../assest/images/couple.jpg);
     height: 600px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    h1{
+        background-color: $color-5;
+        font-family: $secondary-font;
+        grid-column-start: 2;
+        opacity: .8;
+  color: darken($color-3, 40%);
+  grid-row-start: 2;
+  justify-self: center;
+  align-self: end;
+//opacity: .8;
+text-align: center;
+width: 50%;
+padding: 7px 7px 7px 0px; 
+//margin: auto;
+//padding-top: 200px; 
+//line-height: 300px; 
+//vertical-align: middle;
+    }
+    h2{
+        text-align: center;
+        font-family: $primary-font;
+        text-transform: unset;
+        color: darken($color-2, 50%);
+        background-color: $color-5;
+        opacity: .8;
+        width: 50%;
+       // margin: auto;
+        grid-column-start: 2;
+    padding: 7px 0px 7px 7px; 
+        grid-row-start: 3;
+        justify-self: center;
+        align-self: start;
+    }
 }
 .intro{
-    padding:20px;
+    //padding:20px;
 }
+
+.preamble{
+    
+    display: block;
+    width: 80%; 
+    margin: auto; 
+    padding: 25px; 
+    border: 5px solid $color-4; 
+    margin-top: 20px; 
+    h3{
+        padding-bottom: 20px; 
+        text-align: center;
+    }
+}
+
+.main{
+    display: flex; 
+    flex-flow: row wrap; 
+    width: 80%;
+    padding: 25px; 
+    margin: auto; 
+
+}
+
+.main div{
+    padding: 25px; 
+    h3{
+        padding-bottom: 20px; 
+        text-align: center; 
+    }
+}
+
+footer{
+    background-color: $color-1;
+    width: 100%; 
+        bottom : 0px;  
+        left: 0px;
+        right: 0px; 
+        height : 60px;  
+        line-height: 60px;
+        margin-top : 25px;  
+        text-align: center;  
+        vertical-align: middle; 
+        position:fixed;
+       z-index: -1; 
+       //margin-left: -157px; 
+       font-family: $secondary-font;
+     }

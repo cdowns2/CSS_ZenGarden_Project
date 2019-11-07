@@ -1,0 +1,31 @@
+$color-1: #87A599; // sage green
+$color-2: #F6D0B5; // peach
+$color-3: #BBB4AE; // 
+$color-4: #e6e6e6; // light grey
+$color-5: #ffffff; // white
+
+// additional colors
+
+$success: darken($color-1, 10%); // green
+$alert: darken($color-2, 10%); // red
+
+main > h1 {
+    color: darken($color-2, 15%);
+  
+    //@include MQ(L) {
+      /* title goes into the header on big devices */
+      color: $color-2;
+    }
+  //}
+
+  //header {
+    //background-color: $color-2;
+ // }
+  body {
+    /* this is the page background */
+    background-color: $color-5;
+  }
+  a{
+      color: $color-4;
+      text-decoration: none;
+  }
