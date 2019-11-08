@@ -560,12 +560,10 @@ header {
   background-color: #F6D0B5;
   opacity: .3;
   height: 600px;
-  -webkit-animation: header 20s infinite;
-          animation: header 20s infinite;
+  -webkit-animation: header 30s infinite;
+          animation: header 30s infinite;
   -webkit-animation-duration: 30s;
           animation-duration: 30s;
-  -webkit-animation-delay: 10s;
-          animation-delay: 10s;
   background-position: center;
   -webkit-animation-direction: alternate;
           animation-direction: alternate;
