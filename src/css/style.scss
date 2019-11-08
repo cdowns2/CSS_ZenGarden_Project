@@ -122,12 +122,35 @@ flex-flow: row wrap;
      grid-template-rows: auto auto auto auto;
     color: $color-2;
     background-color: $color-2;
-opacity: .2;
-    background-image:url(../assest/images/couple.jpg);
+    opacity: .3;
     height: 600px;
+    animation: header 20s infinite;
+    animation-duration: 30s;
+    animation-delay: 10s; 
     background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    animation-direction: alternate;
+    background-size: contain;
+}
+    // here is the animation for the
+    //background header
+  
+    @keyframes header{
+        0%{
+           background-image:url(../assest/images/Amber.jpg);
+        }
+        25%{
+            background-image: url(../assest/images/couple.jpg);
+        }
+        50%{
+            background-image: url(../assest/images/venue.jpg);
+        }
+        75%{
+            background-image: url(../assest/images/loveandring.jpg);
+        }
+        100%{
+            background-image: url(../assest/images/shoes.jpg);
+        }
+    }
     h1{
         background-color: $color-5;
         font-family: $secondary-font;
@@ -161,7 +184,6 @@ padding: 7px 7px 7px 0px;
         justify-self: center;
         align-self: start;
     }
-}
 
 
 .preamble{
